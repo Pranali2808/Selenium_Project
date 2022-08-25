@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 public class Id_Locators {
 
     @Test
-	public void IdLocator() throws InterruptedException {
+	public void IdLocator() throws InterruptedException 
+	{
 
 		System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 
@@ -27,16 +28,18 @@ public class Id_Locators {
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Log In")).click();
 		
-			Thread.sleep(2000);
-		    driver.close();
+	        Thread.sleep(2000);
+		driver.close();
 
-	    }
-    @Test
-    public static void CreateAccount() throws InterruptedException {
-    System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
+	}
+   
+	@Test
+        public static void CreateAccount() throws InterruptedException 
+	{
+           System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 
-	WebDriver driver = new FirefoxDriver();
-	driver.get("https://www.facebook.com/");
+	   WebDriver driver = new FirefoxDriver();
+	   driver.get("https://www.facebook.com/");
 	
 	        driver.manage().window().maximize();
 	        driver.findElement(By.xpath("//*[text()='Create New Account']")).click();
@@ -70,9 +73,9 @@ public class Id_Locators {
 	        Thread.sleep(2000);
 
 	        driver.findElement(By.name("websubmit")).click();
-	        //Thread.sleep(2000);
+	        Thread.sleep(2000);
 	        driver.close();
 
-	    }
+       }
 }
 
