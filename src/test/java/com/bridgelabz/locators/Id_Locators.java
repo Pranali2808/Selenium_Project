@@ -21,7 +21,7 @@ public class Id_Locators {
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.clear();
-		email.sendKeys("8446151018");
+		email.sendKeys("8446251018");
 		Thread.sleep(3000);
 		WebElement password = driver.findElement(By.id("pass"));
 		password.sendKeys("Prashi@123");
@@ -51,7 +51,7 @@ public class Id_Locators {
 	        driver.findElement(By.name("lastname")).sendKeys("Rane");
 	        Thread.sleep(2000);
 
-	        driver.findElement(By.name("reg_email__")).sendKeys("8446151018");
+	        driver.findElement(By.name("reg_email__")).sendKeys("8446251018");
 	        Thread.sleep(2000);
 
 	        driver.findElement(By.name("reg_passwd__")).sendKeys("Prashi@123");
