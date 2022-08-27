@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class Id_Locators {
 
     @Test
-	public void IdLocator() throws InterruptedException {
+	public static void IdLocator() throws InterruptedException {
 
 		System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 
@@ -39,7 +39,7 @@ public class Id_Locators {
 	driver.get("https://www.facebook.com/");
 	
 	        driver.manage().window().maximize();
-	        driver.findElement(By.xpath("//*[text()='Create New Account']")).click();
+	        driver.findElement(By.linkText("Create New Account")).click();
 	        Thread.sleep(2000);
 
 	        driver.findElement(By.name("firstname")).sendKeys("Prashi");
@@ -54,23 +54,20 @@ public class Id_Locators {
 	        driver.findElement(By.name("reg_passwd__")).sendKeys("Prashi@123");
 	        Thread.sleep(2000);
 
-	        Select selectDay = new Select( driver.findElement(By.name("birthday_day")));
-	        selectDay.selectByVisibleText("28");
+	        driver.findElement(By.name("birthday_day")).sendKeys("28");
 	        Thread.sleep(2000);
 
-	        Select selectMonth = new Select( driver.findElement(By.name("birthday_month")));
-	        selectMonth.selectByVisibleText("Jan");
+	        driver.findElement(By.name("birthday_month")).sendKeys("Jan");
 	        Thread.sleep(2000);
 
-	        Select selectYear = new Select( driver.findElement(By.name("birthday_year")));
-	        selectYear.selectByVisibleText("1997");
+	        driver.findElement(By.name("birthday_year")).sendKeys("1997");
 	        Thread.sleep(2000);
 
-	        driver.findElement(By.xpath("//input[@type='radio' and @value='1']")).click();
+	        driver.findElements(By.name("sex")).get(0).click();
 	        Thread.sleep(2000);
 
 	        driver.findElement(By.name("websubmit")).click();
-	        //Thread.sleep(2000);
+	        Thread.sleep(2000);
 	        driver.close();
 
 	    }
