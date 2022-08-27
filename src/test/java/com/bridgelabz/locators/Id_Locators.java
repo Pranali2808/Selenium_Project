@@ -11,7 +11,12 @@ import org.testng.annotations.Test;
 public class Id_Locators {
 
     @Test
+<<<<<<< HEAD
 	public static void IdLocator() throws InterruptedException {
+=======
+	public void IdLocator() throws InterruptedException 
+	{
+>>>>>>> 3d1b5d48d091db1afc09ff5aec8983ee58026339
 
 		System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 
@@ -20,23 +25,25 @@ public class Id_Locators {
 		
 		WebElement email = driver.findElement(By.id("email"));
 		email.clear();
-		email.sendKeys("8446151018");
+		email.sendKeys("8446251018");
 		Thread.sleep(3000);
 		WebElement password = driver.findElement(By.id("pass"));
 		password.sendKeys("Prashi@123");
 		Thread.sleep(3000);
 		driver.findElement(By.linkText("Log In")).click();
 		
-			Thread.sleep(2000);
-		    driver.close();
+	        Thread.sleep(2000);
+		driver.close();
 
-	    }
-    @Test
-    public static void CreateAccount() throws InterruptedException {
-    System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
+	}
+   
+	@Test
+        public static void CreateAccount() throws InterruptedException 
+	{
+           System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 
-	WebDriver driver = new FirefoxDriver();
-	driver.get("https://www.facebook.com/");
+	   WebDriver driver = new FirefoxDriver();
+	   driver.get("https://www.facebook.com/");
 	
 	        driver.manage().window().maximize();
 	        driver.findElement(By.linkText("Create New Account")).click();
@@ -48,7 +55,7 @@ public class Id_Locators {
 	        driver.findElement(By.name("lastname")).sendKeys("Rane");
 	        Thread.sleep(2000);
 
-	        driver.findElement(By.name("reg_email__")).sendKeys("8446151018");
+	        driver.findElement(By.name("reg_email__")).sendKeys("8446251018");
 	        Thread.sleep(2000);
 
 	        driver.findElement(By.name("reg_passwd__")).sendKeys("Prashi@123");
@@ -70,6 +77,6 @@ public class Id_Locators {
 	        Thread.sleep(2000);
 	        driver.close();
 
-	    }
+       }
 }
 
