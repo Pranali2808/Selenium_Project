@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Navigation {
-	public static void main(String[] args) throws  InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdriver.gecko.driver", "C:\\Selenium\\geckodriver.exe");
 

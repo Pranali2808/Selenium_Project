@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="relativexpathbyid.RelativeXPathById">
+      <class name="com.bridglabz.actionclass.Gmail_contextClickDemo">
         <methods>
-          <include name="CreateAccount"/>
+          <include name="gmail_contextClickDemo_archieve"/>
         </methods>
-      </class> <!-- relativexpathbyid.RelativeXPathById -->
+      </class> <!-- com.bridglabz.actionclass.Gmail_contextClickDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

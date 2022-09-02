@@ -1,4 +1,5 @@
 package com.bridgelabz.capturescreenshot;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
@@ -7,7 +8,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 
 public class CaptureScreenshot {
 	public static void main(String[] args) throws IOException {
@@ -29,7 +29,7 @@ public class CaptureScreenshot {
 
 		File srcFile = ts.getScreenshotAs(OutputType.FILE);
 
-		File destFile = new File(".\\screenshot\\" + date2 + "__actiTIMELoginPage.png");
+		File destFile = new File(".\\screenshot\\" + date2 + "__FacebookPage.png");
 
 		FileUtils.copyFile(srcFile, destFile);
 
